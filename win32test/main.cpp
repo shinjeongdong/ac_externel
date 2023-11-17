@@ -16,7 +16,6 @@ int main()
 	while(1)
 	{
 		Cheats::Run();
-		
 	}
 	
 	return 0;
