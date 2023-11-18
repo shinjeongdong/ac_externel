@@ -57,7 +57,10 @@ void Cheats::Run()
 
 	if (GetAsyncKeyState(VK_CONTROL) & 0x8000)
 	{
-		hack::Aimbot(localentity, entity);
+		if ((entity.pos3.x != 0))
+		{
+			hack::Aimbot(localentity, entity);
+		}
 	}
 
 }
