@@ -35,7 +35,7 @@ public:
 	//////////////
 	int health = 0;
 	int alive = 0;
-	Vec3 pos3;
+	Vec3 pos3 = {0,0,0};
 	Vec2 viewangle;
 
 public:
