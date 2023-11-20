@@ -7,7 +7,7 @@
 
 namespace hack
 {
-	void Aimbot(local local, entity entity);
+	void Aimbot(local local, Vec3 localpos3, Vec3 entitypos3);
 
 	BOOL ESP();
 

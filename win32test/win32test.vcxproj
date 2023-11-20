@@ -24,7 +24,7 @@
     <ProjectGuid>{60132379-bc18-418b-9dbc-56c2deb7f641}</ProjectGuid>
     <RootNamespace>win32test</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>externel aimbot</ProjectName>
+    <ProjectName>as externel</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

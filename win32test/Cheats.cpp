@@ -31,7 +31,7 @@ void Cheats::Run()
 		{
 			continue;
 		}
-
+		printf("%d\n", entity.health);
 		localentity.GetPos();
 		entity.GetPos();
 		localentity.GetViewangle();
@@ -46,20 +46,15 @@ void Cheats::Run()
 			x = entity.pos3;
 			y = localentity.pos3;
 		}
-		else
-		{
-			entity.pos3 = x;
-			localentity.pos3 = y;
-			continue;
-		}
-
+	
 	}
+
 
 	if (GetAsyncKeyState(VK_CONTROL) & 0x8000)
 	{
 		if ((entity.pos3.x != 0))
 		{
-			hack::Aimbot(localentity, entity);
+			hack::Aimbot(localentity,y, x);
 		}
 	}
 

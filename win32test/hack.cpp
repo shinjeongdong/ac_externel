@@ -1,13 +1,13 @@
 #include "hack.h"
 #include <stdio.h>
 
-void hack::Aimbot(local local, entity entity)
+void hack::Aimbot(local local,Vec3 localpos3, Vec3 entitypos3)
 {
 	float x_angle = 0;
 	float y_angle = 0;
 
-    x_angle = math::Get2Ddegree(local.pos3, entity.pos3);
-    y_angle = math::GetYawdegree(local.pos3, entity.pos3);
+    x_angle = math::Get2Ddegree(localpos3, entitypos3);
+    y_angle = math::GetYawdegree(localpos3, entitypos3);
 
     
 	SetAim(local, x_angle, y_angle);

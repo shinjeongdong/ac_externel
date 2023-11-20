@@ -18,8 +18,8 @@ public:
 	uintptr_t player_base = 0;
 	////////
 	int health = 0;
-	Vec3 pos3;
-	Vec2 viewangle;
+	Vec3 pos3 = {0,0,0};
+	Vec2 viewangle = {0,0};
 
 public:
 	BOOL GetHealth();
