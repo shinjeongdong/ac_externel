@@ -1,4 +1,5 @@
 #include "hack.h"
+
 #include <stdio.h>
 
 void hack::Aimbot(local local,Vec3 localpos3, Vec3 entitypos3)
@@ -13,6 +14,7 @@ void hack::Aimbot(local local,Vec3 localpos3, Vec3 entitypos3)
 	SetAim(local, x_angle, y_angle);
 }
 
+
 void hack::SetAim(local local,float x, float y)
 {
 	WriteProcessMemory(hProc, LPVOID(local.player_base + 0x34), &x, sizeof(x), 0);
@@ -20,9 +22,8 @@ void hack::SetAim(local local,float x, float y)
 }
 
 
-BOOL hack::ESP()
+BOOL hack::ESP(entity entity, local local)
 {
-    return 0;
+	ESP::WorldToScreen(entity, local, 1280, 720);
+	return 1;
 }
-
-

@@ -1,6 +1,5 @@
-#include <windows.h>
 #include "class.h"
-#include "main.h"
+
 
 BOOL local::GetHealth()
 {
@@ -19,6 +18,14 @@ BOOL local::GetViewangle()
 {
 	return ReadProcessMemory(hProc, (LPCVOID)(player_base + 0x34), (LPVOID) & (this->viewangle), sizeof(Vec2), 0);
 }
+
+BOOL local::GetViewMartix()
+{
+	
+	
+	return ReadProcessMemory(hProc, (LPCVOID)(0x400000 + 0x17DFD0), (LPVOID) & (this->viewmatrix), sizeof(Matrix), 0);
+}
+
 
 BOOL entity::GetHealth()
 {

@@ -1,6 +1,4 @@
 #include "Cheats.h"
-#include "main.h"
-#include "hack.h"
 #include <stdio.h>
 
 
@@ -26,14 +24,20 @@ void Cheats::Run()
 		}
 		
 		entity.GetHealth();
-		
+		localentity.GetViewMartix();
 		if (entity.health <= 0 || entity.health > 100)
 		{
 			continue;
 		}
-		printf("%d\n", entity.health);
+
 		localentity.GetPos();
 		entity.GetPos();
+
+		hack::ESP(entity,localentity);
+
+
+
+		
 		localentity.GetViewangle();
 
 		//Aimbot Data

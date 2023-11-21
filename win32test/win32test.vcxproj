@@ -135,6 +135,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="class.cpp" />
+    <ClCompile Include="ESP1.cpp" />
     <ClCompile Include="Getproc.cpp" />
     <ClCompile Include="hack.cpp" />
     <ClCompile Include="hackmath.cpp" />
@@ -148,6 +149,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="class.h" />
+    <ClInclude Include="ESP1.h" />
     <ClInclude Include="Getproc.h" />
     <ClInclude Include="hack.h" />
     <ClInclude Include="hackmath.h" />
